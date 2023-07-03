@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:trashure_code_flutter/Frans_Code/Log-in_Sign-In_Screen.dart';
 import 'package:trashure_code_flutter/Frans_Code/Splash_Screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Navbar/screen_home.dart';
+import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Home/homescreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
           // const MyHomePage(title: 'Flutter Demo Home Page'),
           // const Login_Sign(),
           const Splash_Screen(),
+      // const ScreenHome(),
     );
   }
 }
