@@ -3,7 +3,7 @@ import 'package:trashure_code_flutter/Frans_Code/Log-in_Sign-In_Screen.dart';
 import 'package:trashure_code_flutter/Frans_Code/Splash_Screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Navbar/screen_home.dart';
-import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Home/homescreen.dart';
+import 'package:trashure_code_flutter/Frans_Code/homescreen.dart';
 
 void main() {
   runApp(const MyApp());

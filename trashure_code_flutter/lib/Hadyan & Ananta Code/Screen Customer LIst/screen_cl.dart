@@ -29,18 +29,13 @@ class _ScreenCLState extends State<ScreenCL> {
         pelanggan1['jarak'].compareTo(pelanggan2['jarak']));
     return Scaffold(
         appBar: AppBar(
-            title: const Text(
-              "Customer List",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-            ),
-            centerTitle: true,
-            backgroundColor: Color.fromRGBO(39, 79, 193, 1.0),
-            leading: IconButton(
-              icon: Icon(
-                Icons.arrow_back_rounded,
-              ),
-              onPressed: () {},
-            )),
+          title: const Text(
+            "Customer List",
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+          backgroundColor: Color.fromRGBO(39, 79, 193, 1.0),
+        ),
         body: Column(
           children: [
             SizedBox(

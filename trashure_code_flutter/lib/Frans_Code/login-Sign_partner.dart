@@ -1,41 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:trashure_code_flutter/Frans_Code/login-Sign_partner.dart';
+import 'package:trashure_code_flutter/Frans_Code/login_partner.dart';
 import 'package:trashure_code_flutter/Frans_Code/signup.dart';
+import 'package:trashure_code_flutter/Frans_Code/signup_partner.dart';
 import 'login.dart';
 
-class Login_Sign extends StatefulWidget {
-  const Login_Sign({super.key});
+class Login_Sign_Partner extends StatefulWidget {
+  const Login_Sign_Partner({super.key});
 
   @override
-  State<Login_Sign> createState() => _Login_SignState();
+  State<Login_Sign_Partner> createState() => _Login_Sign_PartnerState();
 }
 
-class _Login_SignState extends State<Login_Sign> {
+class _Login_Sign_PartnerState extends State<Login_Sign_Partner> {
   var status = "login";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(elevation: 0),
       backgroundColor: Colors.trashure,
-      appBar: AppBar(
-          elevation: 0,
-          title: Row(
-            // crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              TextButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .push(MaterialPageRoute(builder: (context) {
-                      return Login_Sign_Partner();
-                    }));
-                  },
-                  child: Text(
-                    "Login As Partner",
-                    style: TextStyle(color: Colors.grey),
-                  ))
-            ],
-          )),
-      // appBar: AppBar(title: Text("trashure")),
       body: SingleChildScrollView(
         child: Column(
             // crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -77,7 +59,7 @@ class _Login_SignState extends State<Login_Sign> {
                           });
                         },
                         child: Text(
-                          "Sign-Up",
+                          "Register",
                           style: TextStyle(
                               color: Color.fromRGBO(153, 235, 60, 100),
                               decoration: status == "sign-up"
@@ -88,7 +70,8 @@ class _Login_SignState extends State<Login_Sign> {
                   ],
                 ),
               ),
-              Container(child: status == "login" ? Login_Form() : Sign_Form()),
+              Container(
+                  child: status == "login" ? Login_Partner() : Sign_Partner()),
             ]),
       ),
     );

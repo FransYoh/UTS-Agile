@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trashure_code_flutter/Frans_Code/homescreen.dart';
 // import 'package:flutter_application_2/Screen%20Call%20to%20Dump/screen_ctd.dart';
 // import 'package:flutter_application_2/Screen%20Customer%20LIst/screen_cl.dart';
 // import 'package:flutter_application_2/Screen%20Home/homescreen.dart';
@@ -6,7 +7,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_application_2/Screen%20Schedule/main.dart';
 // import 'package:flutter_application_2/Screen%20Trash%20for%20Cash/screen_tfc.dart';
 import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Call%20to%20Dump/screen_ctd.dart';
-import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Home/homescreen.dart';
+// import 'package:trashure_code_flutter/Frans_Code/homescreen.dart';
 import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Payment/payment.dart';
 import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Schedule/Schedule_screen.dart';
 import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Screen%20Trash%20for%20Cash/screen_tfc.dart';
