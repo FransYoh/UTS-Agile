@@ -31,10 +31,103 @@ class _ScreenHomeState extends State<ScreenHome> {
     PaymentPage(),
     ScreenTfc()
   ];
-  @override
+  void _setSelectedIndex(int index) {
+    setState(() {
+      currentIndex = index;
+    });
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens[currentIndex],
+      appBar: currentIndex == 2 ? AppBar() : null,
+      // drawer: currentIndex == 2? ,
+      body: currentIndex == 2
+          ? Center(
+              child: Column(
+              children: [
+                SizedBox(height: 30),
+                Text(
+                  "Welcome, Guest!",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                Container(
+                  height: 230,
+                  child: Image.asset("assets/images/image 1.png",
+                      alignment: Alignment.topCenter),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Expanded(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Image.asset("assets/icons/navbar1.png"),
+                                Text(
+                                  "Call To Dump",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Image.asset(
+                                  "assets/icons/navbar2.png",
+                                ),
+                                Text(
+                                  "Trash Is Ready",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Image.asset("assets/icons/navbar4.png"),
+                                Text(
+                                  "Cash Or Duel",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                print("object");
+                              },
+                              child: Column(
+                                children: [
+                                  Image.asset("assets/icons/navbar5.png"),
+                                  Text(
+                                    "Trash For Trash",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        )
+                      ]),
+                )
+              ],
+            ))
+          : screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         //backgroundColor: Colors.amber,
         //selectedItemColor: Colors.black,

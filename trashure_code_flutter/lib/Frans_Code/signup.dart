@@ -126,7 +126,22 @@ class _Sign_FormState extends State<Sign_Form> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20))),
                   backgroundColor: (const Color.fromRGBO(254, 253, 251, 100))),
-              onPressed: () {},
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Text("Sign Up Berhasil!"),
+                        actions: [
+                          TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text("OK"))
+                        ],
+                      );
+                    });
+              },
               child: Text(
                 "Sign-Up",
                 style: GoogleFonts.ubuntu(

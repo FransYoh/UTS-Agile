@@ -1,5 +1,6 @@
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
+import 'package:trashure_code_flutter/Hadyan%20&%20Ananta%20Code/Navbar/screen_home.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -74,9 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                         GestureDetector(
-                          onTap: () {
-                            ;
-                          },
+                          onTap: () {},
                           child: Column(
                             children: [
                               Image.asset("assets/icons/navbar5.png"),
@@ -99,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.zero,
             children: [
               Container(
-                height: 160,
+                height: 130,
                 margin: EdgeInsets.only(top: 0),
                 child: DrawerHeader(
                     // decoration: BoxDecoration(color: Colors.cyan),
@@ -109,7 +108,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       // crossAxisAlignment: CrossAxisAlignment.start,
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Image.asset("assets/images/Group 19.png"),
+                        CircleAvatar(
+                            child: Image.asset("assets/images/Group 19.png")),
+                        // Text("Welcome, Guest!"),
                         Text("Welcome, Guest!")
                       ],
                     ),
