@@ -1,0 +1,25 @@
+DISCLAIMER PENJELASAN ALUR PENGERJAAN TUGAS 2
+==============================================
+
+sebelumnya maaf bu jika kelompok kami banyak kekurangan dalam pengerjaan Tugas 2 kali ini.
+pesan ini kami sisipkan untuk memperjelas situasi kelompok kami.
+
+- Pertama kelompok kami menggunakan file pengerjaan UTS Agile yang mana kemarin ketika UTS, Project UTS Agile kami kami buat sama dengan UTS FE Mobile. tapi belakangan kami sadar bahwa lebih baik dan seharusnya Tugas 1 sama dengan FE Mobile dan uts menggunakan project baru, agar ketika mengerjakan tugas 2 ini tidak bertabrakan dengan tugas 2. 
+
+- karena hal ini membuat tugas 2 bertabrakan dengan UTS Agile maka laporan dan trello juga akhirnya bertabrakan karena task coding dan testing sudah di ceklist. kel kami kemarin menanyakan kelanjutan atas masalah ini kepada Ibu Mustika, dan Bu Mustika memberi keringanan dan kebijakan tidak apa apa dilanjutkan, tetapi pada penyusunan laporan disusun berdasarkan alur dan kejadian nyata (tidak mengada-ada). 
+
+- karena ada beberapa task pada board trello sudah diceklis sejak UTS kemarin. dan berdasarkan kejadian nyata juga task tersebut (dalam hal ini coding dan testing) sudah kami selesaikan hampir 99 persen hanya ada beberapa perubahan minor. maka berdasarkan penjelasan Bu Mustika, board trello kami tidak perlu dilakukan perubahan lagi. hanya saja kami mengubah judul trello kami dari "UTS Agile" menjadi "Tugas 2"
+
+- Repository GIT yang kami Pakai pada saat ini untuk melakukan PUSH juga masih beranamakan UTS, karena dari mulai coding kami juga masih menggunakan repository tersebut. kami tidak membuat repository baru agar activity yang kami lakukan selama coding masih bisa terlacak. 
+
+
+- sedikit tambahan lain, anggota kelompok sama dengan kelompok Tugas 1, UTS Agile, dan UTS FE Mobile. yaitu Frans, Hadyan, dan Ananta
+
+Demikian catatan ini kami buat sebagai pengingat dan memperjelas kondisi dari keadaan tugas kelompok kami. 
+
+Dan kami sekelompok mengucapkan Terimakasih Kepada Ibu Mustika Ulina sebagai Dosen yang telah memberi kebijakan dan keringanan kepada kelompok kami.  
+
+TERIMAKASIH :
+KELOMPOK PEAK
+
+
