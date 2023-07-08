@@ -81,7 +81,7 @@ class _ScreenCtdState extends State<ScreenCtd> {
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundImage: AssetImage(
-                          'assets/images/group 19.png',
+                          'assets/images/Group 19.png',
                         ),
                         backgroundColor: Color.fromRGBO(210, 210, 210, 1),
                       ),
@@ -178,7 +178,7 @@ class _ScreenCtdState extends State<ScreenCtd> {
                                                         ),
                                                         SizedBox(height: 16),
                                                         Image.asset(
-                                                            'assets/images/group 19.png'),
+                                                            'assets/images/Group 19.png'),
                                                         Text(
                                                           customer['nama'],
                                                           style: TextStyle(

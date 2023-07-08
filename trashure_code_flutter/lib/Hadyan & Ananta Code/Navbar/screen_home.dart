@@ -40,7 +40,72 @@ class _ScreenHomeState extends State<ScreenHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: currentIndex == 2 ? AppBar() : null,
-      // drawer: currentIndex == 2? ,
+      drawer: currentIndex == 2
+          ? Drawer(
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: [
+                  Container(
+                    height: 130,
+                    margin: EdgeInsets.only(top: 0),
+                    child: DrawerHeader(
+                        // decoration: BoxDecoration(color: Colors.cyan),
+                        child: Column(
+                      children: [
+                        Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            CircleAvatar(
+                                child:
+                                    Image.asset("assets/images/Group 19.png")),
+                            // Text("Welcome, Guest!"),
+                            Text("Welcome, Guest!")
+                          ],
+                        ),
+                      ],
+                    )),
+                  ),
+                  Container(
+                    padding: EdgeInsetsDirectional.only(start: 10, end: 10),
+                    child: Column(children: [
+                      ListTile(
+                        tileColor: Color(0xFF9595FF),
+                        shape: RoundedRectangleBorder(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(15))),
+                        visualDensity: VisualDensity(vertical: -4),
+                        leading: Icon(Icons.home,
+                            color: Color.fromARGB(255, 16, 132, 226)),
+                        title: Text('Home'),
+                      ),
+                      ListTile(
+                        // tileColor: Colors.brown,
+                        visualDensity: VisualDensity(vertical: -2),
+                        leading: Icon(Icons.add_alert_outlined,
+                            color: Color.fromARGB(255, 16, 132, 226)),
+                        title: Text('Alert'),
+                      ),
+                      ListTile(
+                        // tileColor: Colors.brown,
+                        visualDensity: VisualDensity(vertical: -2),
+                        leading: Icon(Icons.settings_outlined,
+                            color: Color.fromARGB(255, 16, 132, 226)),
+                        title: Text('Settings'),
+                      ),
+                      ListTile(
+                        // tileColor: Colors.brown,
+                        visualDensity: VisualDensity(vertical: -2),
+                        leading: Icon(Icons.person_2_outlined,
+                            color: Color.fromARGB(255, 16, 132, 226)),
+                        title: Text('Users'),
+                      ),
+                    ]),
+                  ),
+                ],
+              ),
+            )
+          : null,
       body: currentIndex == 2
           ? Center(
               child: Column(

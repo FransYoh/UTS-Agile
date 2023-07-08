@@ -62,7 +62,7 @@ class _ScreenCLState extends State<ScreenCL> {
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundImage:
-                            AssetImage('assets/images/group 19.png'),
+                            AssetImage('assets/images/Group 19.png'),
                         backgroundColor: Color.fromRGBO(210, 210, 210, 1),
                       ),
                       title: Text(
