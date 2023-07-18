@@ -107,7 +107,7 @@ class _Login_FormState extends State<Login_Form> {
                   backgroundColor: (const Color.fromRGBO(254, 253, 251, 100))),
               onPressed: () {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                    .pushReplacement(MaterialPageRoute(builder: (context) {
                   return ScreenHome();
                 }));
               },

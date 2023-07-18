@@ -100,6 +100,19 @@ class _ScreenHomeState extends State<ScreenHome> {
                             color: Color.fromARGB(255, 16, 132, 226)),
                         title: Text('Users'),
                       ),
+                      ListTile(
+                        // tileColor: Colors.brown,
+                        visualDensity: VisualDensity(vertical: -2),
+                        leading: Icon(Icons.info_outline,
+                            color: Color.fromARGB(255, 16, 132, 226)),
+                        title: Text('About Us'),
+                        onTap: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ScreenHome()));
+                        },
+                      ),
                     ]),
                   ),
                 ],
@@ -195,31 +208,31 @@ class _ScreenHomeState extends State<ScreenHome> {
           : screens[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         //backgroundColor: Colors.amber,
-        //selectedItemColor: Colors.black,
+        selectedItemColor: Color.fromRGBO(153, 235, 0, 1),
         //unselectedItemColor: Colors.grey,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
 
         items: [
           BottomNavigationBarItem(
               icon: Image.asset('assets/icons/navbar1.png'),
-              label: "Home",
+              label: "CTD",
               backgroundColor: Color.fromRGBO(39, 79, 193, 1)),
           BottomNavigationBarItem(
               icon: Image.asset('assets/icons/navbar2.png'),
-              label: "Number",
+              label: "Schedule",
               backgroundColor: Color.fromRGBO(39, 79, 193, 1)),
           BottomNavigationBarItem(
               icon: Image.asset('assets/icons/navbar3.png'),
-              label: "ABC",
+              label: "Home",
               backgroundColor: Color.fromRGBO(39, 79, 193, 1)),
           BottomNavigationBarItem(
               icon: Image.asset('assets/icons/navbar4.png'),
-              label: "Raw",
+              label: "Payment",
               backgroundColor: Color.fromRGBO(39, 79, 193, 1)),
           BottomNavigationBarItem(
               icon: Image.asset('assets/icons/navbar5.png'),
-              label: "Raw",
+              label: "TFC",
               backgroundColor: Color.fromRGBO(39, 79, 193, 1)),
         ],
         currentIndex: currentIndex,

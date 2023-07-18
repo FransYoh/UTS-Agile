@@ -182,7 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin: const EdgeInsets.only(bottom: 30),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF274FC1),
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(28.0),
                 ),
                 padding: const EdgeInsets.all(20.0),
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       ),
                                     ),
                                     style: const TextStyle(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                     ),
                                     textAlign: TextAlign.center,
                                     onFieldSubmitted: (value) {
@@ -242,7 +242,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Container(
                       height: 1,
                       width: double.infinity,
-                      color: Color.fromARGB(255, 210, 210, 210),
+                      color: Colors.black,
                     ),
                     const SizedBox(height: 20),
                     TableCalendar(
@@ -271,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           shape: BoxShape.circle,
                         ),
                         selectedTextStyle: const TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         todayDecoration: BoxDecoration(
                           shape: BoxShape.circle,
@@ -281,29 +281,52 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         todayTextStyle: const TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
                         ),
                         weekendTextStyle: const TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                         outsideDaysVisible: false,
                         defaultTextStyle: const TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                         ),
                       ),
                       daysOfWeekStyle: const DaysOfWeekStyle(
                         weekdayStyle: TextStyle(
-                          color: Color.fromARGB(255, 255, 255, 255),
+                          color: Colors.black,
                         ),
                         weekendStyle: TextStyle(
-                          color: Color.fromARGB(255, 255, 255, 255),
+                          color: Colors.black,
                         ),
                       ),
                     ),
                   ],
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text("Tanggal Berhasil di Set!"),
+                        );
+                      });
+                },
+                child: Text(
+                  "Set Tanggal",
+                  style: TextStyle(fontSize: 20),
+                ),
+                style: ButtonStyle(
+                    fixedSize: MaterialStatePropertyAll(Size(200, 50)),
+                    backgroundColor: MaterialStatePropertyAll(
+                        Color.fromRGBO(39, 79, 193, 1.0)),
+                    foregroundColor: MaterialStatePropertyAll(
+                        Color.fromRGBO(153, 235, 0, 1)),
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)))),
+              )
             ],
           ),
         ),
